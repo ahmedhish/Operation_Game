@@ -3,7 +3,7 @@
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
-  * Author			:Ahmed Hisham Farouk
+  * Author		:Ahmed Hisham Farouk
   ******************************************************************************
   * @attention
   *

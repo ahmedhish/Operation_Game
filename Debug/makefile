@@ -53,8 +53,8 @@ Operation.bin \
 all: Operation.elf secondary-outputs
 
 # Tool invocations
-Operation.elf: $(OBJS) $(USER_OBJS) F:\STM\ ws\Operation\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "Operation.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"F:\STM ws\Operation\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Operation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Operation.elf: $(OBJS) $(USER_OBJS) F:\STM\ ws\Operation_Game\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "Operation.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"F:\STM ws\Operation_Game\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Operation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
